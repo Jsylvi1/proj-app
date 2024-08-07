@@ -30,7 +30,8 @@ const EventPage = () => {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/events/${eventId}`);
+        //const response = await axios.get(`http://localhost:5000/api/events/${eventId}`);
+        const response = await axios.get(process.env.APP_BASE_URL + '/api/events/${eventId}');
         setEvent(response.data);
         setLoading(false);
       } catch (error) {
@@ -42,7 +43,8 @@ const EventPage = () => {
 
     const fetchUnavailableSlots = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/events');
+        //const response = await axios.get('http://localhost:5000/api/events');
+        const response = await axios.get(process.env.APP_BASE_URL + '/api/events');
         const allEvents = response.data;
 
         const blockedSlots = allEvents.flatMap(event =>
@@ -141,7 +143,8 @@ const EventPage = () => {
     }
   
     try {
-      const response = await axios.post(`http://localhost:5000/api/events/addToSchedulerEvents/${eventId}`, {
+      //const response = await axios.post(`http://localhost:5000/api/events/addToSchedulerEvents/${eventId}`, {
+      const response = await axios.post(process.env.APP_BASE_URL + '/api/events/addToSchedulerEvents/${eventId}', {
         name,
         selectedTime: newStart.toISOString(),
         timezone: 'EST' 
@@ -157,8 +160,9 @@ const EventPage = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/events/schedulerEvents/${eventId}/${schedulerEventId}`);
-      
+      //await axios.delete(`http://localhost:5000/api/events/schedulerEvents/${eventId}/${schedulerEventId}`);
+      await axios.delete(process.env.APP_BASE_URL + '/api/events/schedulerEvents/${eventId}/${schedulerEventId}');
+
       setEvent(prevEvent => ({
         ...prevEvent,
         schedulerEvents: prevEvent.schedulerEvents.filter(event => event._id !== schedulerEventId),
@@ -176,8 +180,10 @@ const EventPage = () => {
     }
   
     try {
-      const response = await axios.post(`http://localhost:5000/api/events/sendEmail/${eventId}/${schedulerEventId}`, {
-        email
+      //const response = await axios.post(`http://localhost:5000/api/events/sendEmail/${eventId}/${schedulerEventId}`, {
+        const response = await axios.post(process.env.APP_BASE_URL + '/api/events/sendEmail/${eventId}/${schedulerEventId}', {
+
+      email
       });
   
       if (response.status === 200) {

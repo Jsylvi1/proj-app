@@ -24,7 +24,8 @@ class CalendarComponent extends Component {
 
   fetchEvents = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/events');
+      //const response = await axios.get('http://localhost:5000/api/events');
+      const response = await axios.get(process.env.APP_BASE_URL + '/api/events');
       const events = response.data.map(event => ({
         ...event,
         start: moment(event.start).format(), 
