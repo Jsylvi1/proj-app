@@ -26,7 +26,9 @@ app.get('*', (req, res) => {
   })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
-
+/*
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+*/
+app.listen(process.env.PORT || 80, '0.0.0.0');
