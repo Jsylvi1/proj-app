@@ -1,0 +1,25 @@
+.menu-bar {
+    background-color: #68ACE5;
+    color: white;
+    padding: 10px;
+  }
+  
+  .menu-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content:right;
+  }
+  
+  .menu-bar li {
+    margin: 0 10px;
+  }
+  
+  .menu-bar a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .menu-bar a:hover {
+    text-decoration: underline;
+  }
+  

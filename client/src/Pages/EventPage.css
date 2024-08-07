@@ -1,0 +1,30 @@
+
+.blocked-slot {
+  position: relative;
+}
+
+.blocked-slot::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  border-top: 1px dashed rgba(255, 0, 0, 0.5);
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.rbc-time-slot {
+  position: relative;
+}
+
+.rbc-time-slot::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  border-top: 1px dotted rgba(255, 0, 0, 0.3);
+  transform: translateY(-50%);
+  z-index: 0;
+}

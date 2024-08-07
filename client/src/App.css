@@ -1,0 +1,44 @@
+
+.sidebar {
+  width: 200px; 
+  background-color: #f0f0f0;
+  padding: 20px;
+  
+  position: fixed;
+  top: 0;
+  right: 0; 
+  bottom: 0;
+  z-index: 1000; 
+}
+
+  
+  .sidebar h2 {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .sidebar ul li a:hover {
+    color: #555;
+  }
+  
+
+.scheduler-container {
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 80%;
+}
+

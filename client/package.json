@@ -1,0 +1,103 @@
+{
+  "name": "proj-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aldabil/react-scheduler": "^2.9.3",
+    "@daypilot/daypilot-lite-react": "^3.23.0",
+    "@devexpress/dx-react-core": "^4.0.8",
+    "@devexpress/dx-react-scheduler": "^4.0.8",
+    "@devexpress/dx-react-scheduler-material-ui": "^4.0.8",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fullcalendar/core": "^6.1.14",
+    "@fullcalendar/daygrid": "^6.1.14",
+    "@fullcalendar/interaction": "^6.1.14",
+    "@fullcalendar/list": "^6.1.14",
+    "@fullcalendar/react": "^6.1.14",
+    "@fullcalendar/timegrid": "^6.1.14",
+    "@leafygreen-ui/leafygreen-provider": "^3.1.12",
+    "@leafygreen-ui/side-nav": "^14.1.3",
+    "@mobiscroll/react-lite": "^4.10.9",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.16.0",
+    "@mui/x-data-grid": "^7.9.0",
+    "@mui/x-date-pickers": "^7.9.0",
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "add-to-calendar-button-react": "^2.6.16",
+    "bootstrap": "^5.3.3",
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "data-grid": "^3.0.0",
+    "date-fns": "^3.6.0",
+    "date-fns-tz": "^3.1.3",
+    "dayjs": "^1.11.11",
+    "dhtmlx-scheduler": "^7.0.5",
+    "dotenv": "^16.4.5",
+    "event-utils": "^2.1.0",
+    "express": "^4.19.2",
+    "fullcalendar": "^6.1.14",
+    "ical-generator": "^7.1.0",
+    "ics": "^3.7.6",
+    "mobiscroll-react": "^4.0.0",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.45",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.4",
+    "nodemailer": "^6.9.14",
+    "react": "^18.3.1",
+    "react-big-calendar": "^1.13.0",
+    "react-big-scheduler": "^0.2.7",
+    "react-bootstrap": "^2.10.4",
+    "react-calendar": "^5.0.0",
+    "react-data-grid": "^7.0.0-beta.44",
+    "react-date-range": "^2.0.1",
+    "react-datepicker": "^6.9.0",
+    "react-dom": "^18.3.1",
+    "react-event-utils": "^1.0.1",
+    "react-icons": "^5.2.1",
+    "react-router-dom": "^6.24.1",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "react-timezone-select": "^3.2.5",
+    "react-toastify": "^10.0.5",
+    "rsuite": "^5.64.0",
+    "serve": "^14.2.3",
+    "stream": "^0.0.3",
+    "styled-components": "^5.3.10",
+    "util": "^0.12.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "ajv": "^7.2.4"
+  }
+}
