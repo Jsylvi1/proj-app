@@ -34,7 +34,7 @@ class EventForm extends Component {
 
     try {
       //const response = await axios.post('http://localhost:5000/api/events/add', {
-      const response = await axios.post(process.env.APP_BASE_URL + '/api/events/add', {
+      const response = await axios.post(`process.env.APP_BASE_URL/api/events/add`, {
         title,
         start: localStart,
         end: localEnd,
