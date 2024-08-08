@@ -12,7 +12,7 @@ const EventSummary = ({ _id, title, start, end, onDelete }) => {
   const handleDelete = async () => {
     try {
       //await axios.delete(`http://localhost:5000/api/events/${_id}`);
-      await axios.delete(`process.env.APP_BASE_URL/api/events/${_id}`);
+      await axios.delete(`${process.env.REACT_APP_API_BASE_URL}/api/events/${_id}`);
       onDelete(_id); 
     } catch (error) {
       console.error('Error deleting event:', error);
