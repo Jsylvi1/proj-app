@@ -91,7 +91,7 @@ const sendEmail = async (to, schedulerEventId) => {
       Event Title: ${event.title}
       Scheduler Event Details:
       - Name: ${schedulerEvent.name}
-      - Selected Time: ${new Date(schedulerEvent.selectedTime).toLocaleString()}
+      - Selected Time: ${new Date(schedulerEvent.selectedTime).toLocaleString('en-US', { timeZone: 'America/New_York' })}
     `;
 
     const mailOptions = {
